@@ -8,9 +8,14 @@ use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('/portfolio/portfolio');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
